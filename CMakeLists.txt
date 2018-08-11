@@ -1,0 +1,5 @@
+include_directories(.)
+add_definitions(-DHAVE_VSNPRINTF -DHAVE_VSSCANF -DPDC_WIDE)
+add_subdirectory(pdcurses)
+add_subdirectory(sdl2)
+add_subdirectory(demos)

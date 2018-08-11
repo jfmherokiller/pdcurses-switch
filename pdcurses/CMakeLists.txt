@@ -1,0 +1,46 @@
+set(BASE_SRC
+        addch.c
+        addchstr.c
+        addstr.c
+        attr.c
+        beep.c
+        bkgd.c
+        border.c
+        clear.c
+        color.c
+        debug.c
+        delch.c
+        deleteln.c
+        deprec.c
+        getch.c
+        getstr.c
+        getyx.c
+        inch.c
+        inchstr.c
+        initscr.c
+        inopts.c
+        insch.c
+        insstr.c
+        instr.c
+        kernel.c
+        keyname.c
+        mouse.c
+        move.c
+        outopts.c
+        overlay.c
+        pad.c
+        panel.c
+        printw.c
+        refresh.c
+        scanw.c
+        scroll.c
+        scr_dump.c
+        slk.c
+        termattr.c
+        terminfo.c
+        touch.c
+        util.c
+        window.c
+        )
+add_library(pdbase STATIC ${BASE_SRC})
+target_link_libraries(pdbase pdcurseSDL -lSDL2 -lSDL2_gfx -lSDL2_ttf -lfreetype -lpng -lbz2 -lz  -lm -lnx)

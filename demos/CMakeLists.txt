@@ -1,0 +1,10 @@
+
+link_libraries(pdbase)
+add_executable(firework firework.c)
+add_executable(ozdemo ozdemo.c)
+add_executable(ptest ptest.c)
+add_executable(rain rain.c)
+add_executable(testcurs testcurs.c)
+add_executable(tuidemo tui.c tuidemo.c)
+add_executable(worm worm.c)
+add_executable(xmas xmas.c)
